@@ -3,9 +3,9 @@
 <h2>Courses</h2>
 <h3><%= @user.courses.length <= 0 ? "No Courses" : nil %></h3>
 <ul>
-  <% @user.courses.each do |courses| %>
+  <% @user.courses.each do |course| %>
     <li>
-      <%- link_to course.name, course %>
+      <%= link_to course.name, course %>
     </li>
   <% end %>
 </ul>
